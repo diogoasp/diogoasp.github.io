@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form class="" action="https://www.google.com/search" method="get">
+      Pesquisar:
+      <input id="search" name="q" type="text" value="" placeholder="Pesquisar"/>
+      <input id = "btnSubmit" type="submit" name="" value="Buscar">
+      <input id = "btnClean" type="reset" name="" value="Limpar">
+      <input type="text" name="senha" value="" pattern="(?=.*\d)(?=.*[a-z]){5,}">
+
+      <p>Você deseja trabalhar como webmaster?</p>
+      <input type="radio" name="radioGroup" value="">Sim<br></input>
+      <input type="radio" name="radioGroup" value="">Não<br></input>
+      <input type="radio" name="radioGroup" value="">Talvez<br></input>
+      <input type="radio" name="radioGroup" value="">Quem sabe<br></input>
+
+      <p>O que deseja aprender?</p>
+      <input type="checkbox" name="checkGroup" value="">HTML <br>
+      <input type="checkbox" name="checkGroup" value="">CSS <br>
+      <input type="checkbox" name="checkGroup" value="">JavaScript <br>
+      <input type="checkbox" name="checkGroup" value="">PHP <br>
+    </form>
+
+    <form class="" action="#" method="get">
+      <fieldset>
+        <legend>Informações Pessoais: </legend>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" value="">
+        <label for="email">E-mail: </label>
+        <input type="text" id="email" value="">
+        <label for="diaSalario"> Dias: </label>
+
+        <select required id = "diaSalario" class="" name="diaDePagamento" size="5" multiple>
+
+          <optgroup label="Dias Pares">
+            <option value="10">10</option>
+            <option value="20">20</option>
+          </optgroup>
+
+          <optgroup label="Dias Impares">
+            <option selected value="1">1</option>
+          </optgroup>
+
+        </select>
+      </fieldset>
+      <br>
+        <textarea name="name" rows="8" cols="80" maxlength="2000" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+
+        <input type="file" name="" value="">
+        <input type="email" name="" value="">
+        <input type="url" name="" value="">
+        <input type="number" name="" value="">
+        <input type="range" name="" value="">
+        <input type="date" name="" value="">
+        <input type="search" name="" value="">
+
+    </form>
+  </body>
+</html>
