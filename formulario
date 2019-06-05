@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aulas de Hipermidias</title>
+  </head>
+  <body>
+  	<h1>Aulas de Hipermidias</h1>
+    <h2>Preencha o formulário abaixo</h2>
+    
+    <form class="" action="#" method="get">
+     	<fieldset><legend>Dados Pessoais</legend>
+     		<table cellpadding="5">
+            	<tr>
+                	<td><label for="nome">Nome: </label></td>
+                    <td colspan="3"><input type="text" name="nome"></td>
+                    <td><label for="sobrenome"> Sobrenome: </label></td>
+                    <td><input type="text" name="sobrenome"></td>
+                </tr>
+                <tr>
+                	<td><label for="nascimento">Nascimento: </label></td>
+                    <td><input type="text" size="2" maxlength="2" placeholder="dd"  name="nascimento"></td>
+                    <td><input type="text" size="2" maxlenght="2" placeholder="mm"></td>
+                    <td><input type="text" size="4" maxlenght="4" placeholder="aaaa"></td>
+               </tr>
+               <tr>
+                	<td><label for="rg">RG: </label></td>
+                    <td colspan="3"><input name="rg" type="text" size="12" maxlenght="12"></td>
+               </tr>
+               <tr>
+                	<td><label for="cpf">CPF: </label></td>
+                    <td colspan="2"><input name="cpf" type="text" size="11" maxlenght="11"></td>
+                    -
+                    <td><input type="text" size="2" maxlenght="2"></td>
+               </tr>
+            </table>
+		</fieldset>
+        <fieldset><legend>Dados de Endereço</legend>
+     		<table cellpadding="5">
+            	<tr>
+                	<td><label for="rua">Rua: </label></td>
+                    <td colspan="2"><input type="text" name="rua"></td>
+                    <td><label for="numero"> Numero: </label></td>
+                    <td><input type="text" name="numero" size="3" maxlenght="4"></td>
+                </tr>
+                <tr>
+                	<td><label for="bairro">Bairro: </label></td>
+                    <td colspan="2"><input type="text" name="bairro"></td>
+               </tr>
+               <tr>
+                	<td><label for="estado">Estado: </label></td>
+                    <td colspan="2"><select name="estado">
+                    	  	<option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </td>
+               </tr>
+               <tr>
+                	<td><label for="cidade">Cidade: </label></td>
+                    <td colspan="2"><input name="cidade" type="text"></td>
+               </tr>
+               <tr>
+                	<td><label>CEP: </label></td>
+                    <td><input type="text" size="5" maxlenght="5"></td>
+                    -
+                    <td><input type="text" size="3" maxlenght="3"></td>
+               </tr>
+            </table>
+		</fieldset>
+    </form>
+  </body>
+</html>
