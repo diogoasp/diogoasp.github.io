@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aulas de Hipermidias</title>
+  </head>
+  <body>
+  	<h1>Aulas de Hipermidias</h1>
+    <h2>Preencha o formulário abaixo</h2>
+    <form class="" action="#" method="get">
+     	<fieldset><legend>Dados Pessoais</legend>
+     		<table cellpadding="5">
+            	<tr>
+                	<td><label for="nome">Nome: </label></td>
+                    <td><input size="16" type="text" name="nome"></td>
+                    <td><label for="sobrenome"> Sobrenome: </label></td>
+                    <td><input size="16" type="text" name="sobrenome"></td>
+                </tr>
+                <tr>
+                	<td><label for="nascimento">Nascimento: </label></td>
+                    <td name="nascimento">
+                      <input type="text" size="2" maxlength="2" placeholder="dd" >
+                      <input type="text" size="2" maxlenght="2" placeholder="mm">
+                      <input type="text" size="4" maxlenght="4" placeholder="aaaa">
+                    </td>
+               </tr>
+               <tr>
+                	<td><label for="rg">RG: </label></td>
+                  <td><input name="rg" type="text" size="12" maxlenght="12"></td>
+               </tr>
+               <tr>
+                	<td><label for="cpf">CPF: </label></td>
+                    <td>
+                      <input name="cpf" type="text" size="9" maxlenght="11">
+                      -
+                      <input type="text" size="2" maxlenght="2">
+                    </td>
+               </tr>
+            </table>
+		</fieldset>
+    </form>
+    <br>
+    <form class="" action="index.html" method="post">
+        <fieldset>
+          <legend>Dados de Endereço</legend>
+     		  <table cellpadding="5">
+            	<tr>
+                	<td><label for="rua">Rua: </label></td>
+                    <td><input size="16" type="text" name="rua"></td>
+                    <td><label for="numero"> Numero: </label></td>
+                    <td><input type="text" name="numero" size="3" maxlenght="4"></td>
+              </tr>
+              <tr>
+                	<td><label for="bairro">Bairro: </label></td>
+                  <td><input size="16" type="text" name="bairro"></td>
+              </tr>
+              <tr>
+                	<td><label for="estado">Estado: </label></td>
+                    <td><select name="estado">
+                    	  	<option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </td>
+               </tr>
+               <tr>
+                	<td><label for="cidade">Cidade: </label></td>
+                    <td><input size="16" name="cidade" type="text"></td>
+               </tr>
+               <tr>
+                	<td><label>CEP: </label></td>
+                    <td>
+                      <input type="text" size="5" maxlenght="5">
+                      -
+                      <input type="text" size="3" maxlenght="3">
+                    </td>
+               </tr>
+            </table>
+		</fieldset>
+    <br>
+    </form>
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Dados de login</legend>
+        <table cellpadding="5">
+          <tr>
+            <td><label for="email">E-mail: </label></td>
+            <td><input size="16 "type="email" name="email" value=""></td>
+          </tr>
+          <tr>
+            <td><label for="imgPerfil">Imagem de Perfil: </label></td>
+            <td><input type="file" name="" value=""></td>
+          </tr>
+          <tr>
+            <td><label for="loginUsuario">Login de usuário: </label></td>
+            <td> <input size="16" type="text" name="loginUsuario" value=""></td>
+          </tr>
+          <tr>
+            <td><label for="password">Senha: </label></td>
+            <td><input size="16" type="password" name="password" value=""></td>
+          </tr>
+          <tr>
+            <td><label for="passwordConf">Confirme a senha: </label></td>
+            <td><input size="16" type="password" name="passwordConf" value=""></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <br>
+    <form class="" action="index.html" method="post">
+      <fieldset>
+        <legend>Pesquisa de Interesse</legend>
+        <table cellpadding="5">
+          <tr>
+            <td><label>Você deseja trabalhar como Webmaster?</label></td>
+            <td>
+              <input type="radio" name="radioG" value="sim">Sim<br>
+              <input type="radio" name="radioG" value="nao">Não<br>
+              <input type="radio" name="radioG" value="talvez">Talvez<br>
+              <input type="radio" name="radioG" value="quemSabe">Quem sabe<br>
+            </td>
+          </tr>
+          <tr>
+            <td><label>O que deseja aprender?</label></td>
+            <td>
+              <input type="checkbox" name="checkGroup" value="html">HTML <br>
+              <input type="checkbox" name="checkGroup" value="css">CSS <br>
+              <input type="checkbox" name="checkGroup" value="javascript">Java Script <br>
+              <input type="checkbox" name="checkGroup" value="django">Django <br>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="comentario">Deixe seu comentário: </label></td>
+            <td> <textarea name="comentario" rows="8" cols="80"></textarea> </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
