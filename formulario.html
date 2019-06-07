@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Aulas de Hipermidias</title>
+    <style media="screen">
+      td{
+        padding:5px;
+      }
+    </style>
   </head>
   <body>
   	<h1>Aulas de Hipermidias</h1>
@@ -10,31 +15,31 @@
     <form class="" action="#" method="get">
      	<fieldset>
         <legend>Dados Pessoais</legend>
-     		<table cellpadding="5">
+     		<table>
             	<tr>
                 	<td><label for="nome">Nome: </label></td>
-                    <td><input size="16" type="text" name="nome"></td>
+                    <td><input size="16" type="text" id="nome"></td>
                     <td><label for="sobrenome"> Sobrenome: </label></td>
-                    <td><input size="16" type="text" name="sobrenome"></td>
+                    <td><input size="16" type="text" id="sobrenome"></td>
                 </tr>
                 <tr>
-                	<td><label for="nascimento">Nascimento: </label></td>
-                    <td name="nascimento">
-                      <input type="text" size="2" maxlength="2" placeholder="dd" >
-                      <input type="text" size="2" maxlenght="2" placeholder="mm">
-                      <input type="text" size="4" maxlenght="4" placeholder="aaaa">
-                    </td>
+                	<td><label>Nascimento: </label></td>
+                  <td>
+                    <input type="text" size="2" maxlength="2" placeholder="dd" >
+                    <input type="text" size="2" maxlength="2" placeholder="mm">
+                    <input type="text" size="4" maxlength="4" placeholder="aaaa">
+                  </td>
                </tr>
                <tr>
                 	<td><label for="rg">RG: </label></td>
-                  <td><input name="rg" type="text" size="12" maxlenght="12"></td>
+                  <td><input id="rg" type="text" size="12" maxlength="12"></td>
                </tr>
                <tr>
                 	<td><label for="cpf">CPF: </label></td>
                     <td>
-                      <input name="cpf" type="text" size="9" maxlenght="11">
+                      <input id="cpf" type="text" size="9" maxlength="11">
                       -
-                      <input type="text" size="2" maxlenght="2">
+                      <input type="text" size="2" maxlength="2">
                     </td>
                </tr>
             </table>
@@ -44,20 +49,20 @@
     <form class="" action="index.html" method="post">
         <fieldset>
           <legend>Dados de Endereço</legend>
-     		  <table cellpadding="5">
+     		  <table>
             	<tr>
                 	<td><label for="rua">Rua: </label></td>
-                    <td><input size="16" type="text" name="rua"></td>
+                    <td><input size="16" type="text" id="rua"></td>
                     <td><label for="numero"> Numero: </label></td>
-                    <td><input type="text" name="numero" size="3" maxlenght="4"></td>
+                    <td><input type="text" id="numero" size="3" maxlenght="4"></td>
               </tr>
               <tr>
                 	<td><label for="bairro">Bairro: </label></td>
-                  <td><input size="16" type="text" name="bairro"></td>
+                  <td><input size="16" type="text" id="bairro"></td>
               </tr>
               <tr>
                 	<td><label for="estado">Estado: </label></td>
-                    <td><select name="estado">
+                    <td><select id="estado">
                     	  	<option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -90,7 +95,7 @@
                </tr>
                <tr>
                 	<td><label for="cidade">Cidade: </label></td>
-                    <td><input size="16" name="cidade" type="text"></td>
+                    <td><input size="16" id="cidade" type="text"></td>
                </tr>
                <tr>
                 	<td><label>CEP: </label></td>
@@ -107,26 +112,26 @@
     <form class="" action="index.html" method="post">
       <fieldset>
         <legend>Dados de login</legend>
-        <table cellpadding="5">
+        <table>
           <tr>
             <td><label for="email">E-mail: </label></td>
-            <td><input size="16 "type="email" name="email" value=""></td>
+            <td><input size="16 "type="email" id="email" value=""></td>
           </tr>
           <tr>
             <td><label for="imgPerfil">Imagem de Perfil: </label></td>
-            <td><input type="file" name="" value=""></td>
+            <td><input type="file" id="imgPerfil" value=""></td>
           </tr>
           <tr>
             <td><label for="loginUsuario">Login de usuário: </label></td>
-            <td> <input size="16" type="text" name="loginUsuario" value=""></td>
+            <td> <input size="16" type="text" id="loginUsuario" value=""></td>
           </tr>
           <tr>
             <td><label for="password">Senha: </label></td>
-            <td><input size="16" type="password" name="password" value=""></td>
+            <td><input size="16" type="password" id="password" value=""></td>
           </tr>
           <tr>
             <td><label for="passwordConf">Confirme a senha: </label></td>
-            <td><input size="16" type="password" name="passwordConf" value=""></td>
+            <td><input size="16" type="password" id="passwordConf" value=""></td>
           </tr>
         </table>
       </fieldset>
@@ -156,7 +161,7 @@
           </tr>
           <tr>
             <td><label for="comentario">Deixe seu comentário: </label></td>
-            <td><textarea name="comentario" rows="8" cols="80"></textarea></td>
+            <td><textarea id="comentario" rows="8" cols="80"></textarea></td>
           </tr>
         </table>
       </fieldset>
