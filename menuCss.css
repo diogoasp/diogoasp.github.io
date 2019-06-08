@@ -1,0 +1,25 @@
+
+nav ul{
+  text-decoration: none;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid white;
+  border-radius: 1px;
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin: 0px;
+  display: block;
+}
+
+nav li:hover{
+  background-color: white;
+}

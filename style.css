@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap');
+
+body{
+  font: bold 12px 'Encode Sans Semi Expanded', sans-serif;
+  background-image: url(https://backgrounddownload.com/wp-content/uploads/2018/09/background-vermelho-com-preto-9.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #ffffff;
+  background-attachment: scroll;
+  padding: 20px;
+
+}
+
+h1{
+  font-size: 25px;
+  color: red;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  text-indent: 20px;
+  text-align: justify;
+}
+p::first-letter{
+  font-size: 20px;
+  font-weight: 300;
+  color: red;
+}
+
+p::selection{
+  background-color: white;
+}
+
+p:hover{
+  color: black;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  color: #e69d9d;
+}
+
+nav{
+  font: bold 20px 'Encode Sans Semi Expanded', sans-serif;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba;
+}
+
+nav a::after{
+  content: "<-";
+}
+nav a::before{
+  content: "->";
+}
+
+nav li{
+  text-decoration: none;
+  display: inline-block;
+  padding:5px;
+}
