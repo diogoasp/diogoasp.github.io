@@ -33,7 +33,7 @@ ul li{
   text-decoration: none;
   width: 95%;
   text-align: center;
-  padding: 2px;
+  padding: 3px;
 }
 
 a{
@@ -43,8 +43,9 @@ a{
   color: black;
   background-color: #ccc;
   display: block;
-  margin: 0.25px;
+  margin: 0.5px;
   padding: 14px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 a:hover{
@@ -78,7 +79,7 @@ footer p{
 }
 
 .border{
-  background-color: #555;
+  background-image: linear-gradient(to bottom right, #555, #557);
   color: #eee;
   border-radius: 2px;
 }
