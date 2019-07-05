@@ -48,8 +48,9 @@ a{
 }
 
 a:hover{
-  background-color: #aab566;
-  color: #eee;
+  background-image: linear-gradient(#ccc, white, #ccc);
+  color: #000;
+  font-weight: bold;
 }
 
 section{
