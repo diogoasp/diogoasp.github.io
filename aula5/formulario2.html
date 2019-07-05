@@ -3,36 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Aulas de Hipermidias</title>
+    <link rel="stylesheet" href="formStyle.css">
   </head>
   <body>
     <header>
       <h1>Aulas de Hipermidias</h1>
+      <h2>Preencha o formulário abaixo</h2>
     </header>
-    <section>
-      <header>
-        <h2>Preencha o formulário abaixo</h2>
-      </header>
-    </section>
-    <form class="" action="#" method="get">
-     	<fieldset>
-        <legend>Dados Pessoais</legend>
-     		<label for="nome">Nome: </label>
-        <input size="16" type="text" id="nome">
-        <label for="sobrenome"> Sobrenome: </label>
-        <input size="16" type="text" id="sobrenome">
-        <label>Nascimento: </label>
-        <input type="text" size="2" maxlength="2" placeholder="dd" >
-        <input type="text" size="2" maxlength="2" placeholder="mm">
-        <input type="text" size="4" maxlength="4" placeholder="aaaa">
-        <label for="rg">RG: </label>
-        <input id="rg" type="text" size="12" maxlength="12">
-        <label for="cpf">CPF: </label>
-        <input id="cpf" type="text" size="9" maxlength="11">
-                      -
-        <input type="text" size="2" maxlength="2">
-		</fieldset>
-    </form>
+      <form class="simpleForm" action="#" method="get">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div class="">
+            <label for="nome">Nome: </label>
+            <input size="16" type="text" id="nome">
+          </div>
+          <div class="">
+            <label for="sobrenome"> Sobrenome: </label>
+            <input size="16" type="text" id="sobrenome">
+          </div>
+          <div class="">
+            <label>Nascimento: </label>
+            <input type="text" size="2" maxlength="2" placeholder="dd" >
+            <input type="text" size="2" maxlength="2" placeholder="mm">
+            <input type="text" size="4" maxlength="4" placeholder="aaaa">
+          </div>
+          <div class="">
+            <label for="rg">RG: </label>
+            <input id="rg" type="text" size="12" maxlength="12">
+          </div>
+          <div class="">
+            <label for="cpf">CPF: </label>
+            <input id="cpf" type="text" size="9" maxlength="11">
+            -
+            <input type="text" size="2" maxlength="2">
+          </div>
+        </fieldset>
+      </form>
     <br>
+    <!-- <div class="grid"> -->
+      <!--
+    </div>
     <form class="" action="index.html" method="post">
         <fieldset>
           <legend>Dados de Endereço</legend>
@@ -155,6 +165,6 @@
     </form>
     <br>
     <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    <input type="reset" value="Limpar"> -->
   </body>
 </html>

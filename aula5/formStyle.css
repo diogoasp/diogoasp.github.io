@@ -1,0 +1,16 @@
+label{
+  float: left;
+  width: 85px;
+  padding: 4px;
+  margin-top: 5px;
+  clear: left;
+}
+
+input{
+  margin-top: 5px;
+  padding: 4px;
+}
+
+.simpleForm{
+  width: 80%;
+}
