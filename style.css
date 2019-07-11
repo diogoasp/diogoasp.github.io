@@ -1,0 +1,141 @@
+body{
+  display: grid;
+  grid-template-areas:"head head head"
+                      "nav main asi"
+                      "foo foo foo";
+  grid-template-rows: 220px 1fr 20px;
+  grid-template-columns: 250px 1fr 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#bodyHeader{
+  grid-area: head;
+  margin-bottom: 10px;
+
+}
+
+/*-----Elementos do Header------*/
+
+#logo{
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+#headerElements{
+  display: block;
+}
+
+#topMenu{
+  margin: 0px;
+  float: right;
+  clear: right;
+}
+
+#searchForm{
+  grid-area: search;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  float: right;
+  clear: right;
+}
+#searchForm a{
+  float: right;
+  padding: 5px;
+}
+#botnav{
+  grid-area: botnav;
+  margin-top: 30px;
+  float: right;
+  clear: right;
+  align-self: baseline;
+}
+
+#botnav li{
+  display: inline-block;
+}
+
+#botnav li a{
+  display: inline;
+}
+/*--------------------------------*/
+
+.secNav ul li{
+  text-decoration: none;
+  display: inline-block;
+  border-right: 1px solid black;
+  padding: 3px;
+}
+
+#topMenu ul a{
+   padding: 2px;
+   display: inline;
+}
+
+#leftMenu{
+  grid-area: nav;
+  width: 200px;
+}
+
+#mid{
+  grid-area: main;
+  /* width: 90%; */
+  margin-left: 10px;
+  padding: 10px;
+
+}
+
+#mid main{
+  background-color: #ccc;
+  padding: 20px;
+  margin-top: 0;
+  
+}
+
+#mid main figure{
+  float: left;
+}
+
+#mid section article{
+  background-color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.spot{
+  background-color: #ccc;
+}
+
+.mainNav ul{
+  list-style-type: none;
+  margin: 5px;
+  padding-left: 0px;
+}
+.mainNav li{
+    text-decoration: none;
+    /* width: 95%; */
+    text-align: center;
+    padding: 3px;
+}
+.mainNav ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: black;
+  background-color: #ccc;
+  display: block;
+  margin: 0.5px;
+  padding: 14px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+aside{
+  grid-area: asi;
+  width: 200px;
+}
