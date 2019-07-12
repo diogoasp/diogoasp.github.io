@@ -1,141 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
+
 body{
   display: grid;
   grid-template-areas:"head head head"
                       "nav main asi"
                       "foo foo foo";
-  grid-template-rows: 220px 1fr 20px;
-  grid-template-columns: 250px 1fr 250px;
-  margin-left: 50px;
-  margin-right: 50px;
+  grid-template-columns: 21% 54% 25%;
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  font-family: 'Sniglet', cursive;
+  font-size: 12pt;
 }
-
-#bodyHeader{
-  grid-area: head;
-  margin-bottom: 10px;
-
-}
-
-/*-----Elementos do Header------*/
-
-#logo{
-  float: left;
-  margin-left: 0px;
-  margin-top: 0px;
-}
-
-#headerElements{
-  display: block;
-}
-
-#topMenu{
+figure{
   margin: 0px;
-  float: right;
-  clear: right;
 }
-
-#searchForm{
-  grid-area: search;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
-  float: right;
-  clear: right;
-}
-#searchForm a{
-  float: right;
-  padding: 5px;
-}
-#botnav{
-  grid-area: botnav;
-  margin-top: 30px;
-  float: right;
-  clear: right;
-  align-self: baseline;
-}
-
-#botnav li{
-  display: inline-block;
-}
-
-#botnav li a{
-  display: inline;
-}
-/*--------------------------------*/
-
+/* Classes de Nav */
 .secNav ul li{
   text-decoration: none;
   display: inline-block;
   border-right: 1px solid black;
-  padding: 3px;
+  font-size: 10pt;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
-#topMenu ul a{
-   padding: 2px;
-   display: inline;
+.secNav ul li:last-child{
+  border-right: 0px solid black;
 }
-
-#leftMenu{
-  grid-area: nav;
-  width: 200px;
+div.mainNav{
+  width: 100%;
 }
-
-#mid{
-  grid-area: main;
-  /* width: 90%; */
-  margin-left: 10px;
-  padding: 10px;
-
-}
-
-#mid main{
-  background-color: #ccc;
-  padding: 20px;
-  margin-top: 0;
-  
-}
-
-#mid main figure{
-  float: left;
-}
-
-#mid section article{
-  background-color: #ccc;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.spot{
-  background-color: #ccc;
-}
-
-.mainNav ul{
-  list-style-type: none;
-  margin: 5px;
-  padding-left: 0px;
+.mainNav ul {
+    list-style-type: none;
+    margin: 5px;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100%;
 }
 .mainNav li{
     text-decoration: none;
-    /* width: 95%; */
-    text-align: center;
     padding: 3px;
 }
 .mainNav ul li a{
   text-decoration: none;
   font-size: 14px;
-  font-family: sans-serif;
   color: black;
   background-color: #ccc;
-  display: block;
   margin: 0.5px;
-  padding: 14px;
+  padding: 12px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
-
-
+/* Header */
+header#inicio{
+  margin-bottom: 10px;
+  grid-area: head;
+}
+figure#logo{
+  margin-left: 0px;
+  margin-top: 10px;
+  float: left;
+  width: 21%;
+}
+figure#logo img{
+  max-height: 200px;
+  min-width: 150px;
+  min-height: 100px;
+  width: 100%;
+  height: 100%;
+}
+div#headerElements{
+  grid-area: head;
+  display: block;
+  float: right;
+}
+nav#topMenu{
+  margin: 0px;
+  float: right;
+  clear: right;
+  margin-right: 10px;
+}
+nav#topMenu ul li a{
+   margin-top: 0px;
+   padding-top: 0px;
+   padding-bottom:0px;
+   margin-right: 5px;
+   display: inline;
+}
+form#searchForm{
+  grid-area: search;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  float: right;
+  clear: right;
+}
+form#searchForm a{
+  float: right;
+  padding: 5px;
+}
+form#searchForm #btnFind{
+  margin-right: 10px;
+  font-size: 14pt;
+  padding: 5px;
+}
+form#searchForm #btnSubmit{
+  margin-left: 0px;
+  padding: 7px;
+}
+form#searchForm #txtSearch{
+  margin-right: 0px;
+  padding: 3px;
+  font-size: 12pt;
+}
+nav#botnav{
+  grid-area: botnav;
+  margin-top: 25px;
+  float: right;
+  clear: right;
+  align-self: baseline;
+}
+nav#botnav li{
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+}
+nav#botnav li a{
+  display: inline-block;
+  width: 85%;
+}
+/* Menu da esquerda */
+nav#leftMenu{
+  grid-area: nav;
+  width: 100%;
+}
+nav#leftMenu img{
+  max-height: 200px;
+  min-width: 150px;
+  min-height: 50px;
+  width: 100%;
+}
+nav#leftMenu li a{
+  display: block;
+}
+nav#leftMenu div#mostPopular ul{
+  list-style-type: none;
+  border: 1px solid black;
+  padding: 7px;
+  margin: 2px;
+  font-size: 12px;
+}
+nav#leftMenu div#mostPopular li{
+  padding: 2px;
+  text-decoration: none;
+}
+nav#leftMenu div#mostPopular li a{
+  text-decoration: none;
+  text-align: left;
+}
+nav#leftMenu div#mostPopular li a::before{
+  content: "> ";
+}
+div#mostPopular h3 {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+/* Div Central */
+div#mid{
+  grid-area: main;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  padding-top: 0px;
+}
+/* Main */
+div#mid main{
+  background-color: #ccc;
+  padding: 15px;
+  margin-top: 0;
+}
+div#mid h2, div#mid h3, div#mid h4, div#mid h5, div#mid p{
+  margin: 5px;
+  padding-bottom: 2px;
+}
+div#mid main header {
+  display: block;
+}
+div#mid main header h2{
+    float: left;
+}
+.more{
+  float: right;
+}
+button.more{
+  margin-left: 5px;
+}
+div#mid main figure{
+  float: left;
+  clear: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  padding: 2px;
+  border: 1px solid white;
+}
+div#mid main #notice{
+  clear: left;
+  margin: 0px;
+  padding: 0px;
+}
+/* 1° article */
+div#mid section article{
+  background-color: #ccc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: block;
+  clear: left;
+  height: 100px;
+}
+article#newsticker div#content{
+  position: relative;
+  width: 90%;
+  float: left;
+}
+article#newsticker div#buttons{
+  float: right;
+}
+article#newsticker div#buttons button{
+  float: right;
+  clear: right;
+  margin: 2px;
+}
+div#buttons img{
+  width: 10px;
+  height: 10px;
+}
+article#newsticker div#buttons button#homeBtn{
+  margin-bottom: 30px;
+}
+/* 2° article */
+div#mid section article#calendar{
+  height: 100px;
+}
+div#mid section article#calendar header{
+  display: block;
+}
+div#mid section article#calendar header h3{
+  float: left;
+  margin-right: 0;
+}
+div#mid section article#calendar #calendarContent{
+  clear: both;
+}
+#event::after{
+  content: "📆";
+  margin-left: 5px;
+}
+/* ---------- */
+.links{
+  clear: left;
+  margin-top: 0px;
+}
+.links .date{
+  width: 150px;
+  text-align: right;
+  padding: 2px;
+}
+.links a{
+  width: 200px;
+  text-align: left;
+  margin-left: 5px;
+}
+.spot{
+  background-color: #ccc;
+}
+/* Aside */
 aside{
   grid-area: asi;
-  width: 200px;
+}
+aside figure#mainFig {
+  position: relative;
+  width: 88%;
+  height: 305px;
+  padding: 15px;
+}
+aside figure#mainFig img{
+  width: 100%;
+  height: 100%;
+}
+aside figure#mainFig figcaption{
+  opacity: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  top: 40%;
+  padding: 5px;
+}
+aside div.figures{
+  display: block;
+}
+aside div.figures figure.fig img {
+  width: 37%;
+  height: 35.5%;
+  padding: 10px;
+  margin-top: 20px;
+  float: left;
+  clear: left;
+}
+aside div.figures figure.fig figcaption {
+    width: 50%;
+    float: right;
+    clear: right;
+    text-align: left;
+    padding-top: 15%;
+    font-size: 10pt;
+}
+aside div.figures figure.fig figcaption h2{
+    text-s
+}
+/* Footer */
+footer{
+  border-top: 1px solid black;
+  grid-area: foo;
+  display: block;
+}
+footer nav{
+  float: left;
+  margin-right: 10%;
+  margin-left: 0px;
+}
+footer nav#bottomMenu ul{
+  margin-left: -15px;
+  padding: 0px;
+  float: left;
+}
+footer a img{
+  width: 4%;
+  height: 4%;
+  margin-top: 0.5%;
+}
+footer small{
+  float: right;
+  margin-top: 1.5%;
 }

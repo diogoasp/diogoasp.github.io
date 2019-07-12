@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header id="bodyHeader">
+    <header id="inicio">
       <figure id="logo">
         <img src="https://via.placeholder.com/250x200" alt="headerImg" title="Oideachais Agus Scileanna">
       </figure>
@@ -18,15 +18,15 @@
             <li> <a href="#">Sitemap</a> </li>
             <li> <a href="#">A-Z</a> </li>
             <li> <a href="#">Contact</a> </li>
-            Text: <a href="#">A</a> <a href="#">A</a> <a href="#">A</a>
+            <li> Text: <a href="#">A</a> <a href="#">A</a> <a href="#">A</a></li>
           </ul>
         </nav>
 
         <form id="searchForm" action="https://www.google.com/search" method="get">
-          <button type="button" name="findBtn"> Find a School</button>
-          <input id="search" name="q" type="text" value="" placeholder="Site Search"/>
+          <button id="btnFind" type="button" name="btnFind"> Find a School</button>
+          <input id="txtSearch" name="q" type="text" value="" placeholder="Site Search"/>
           <input id = "btnSubmit" type="submit" name="submit" value="OK">
-          <label for="search"> <br> <a href="#">Advanced Search</a></label>
+          <label for="txtSearch"> <br> <a href="#">Advanced Search</a></label>
         </form>
 
         <nav id="botnav" class="mainNav">
@@ -41,7 +41,7 @@
     </header>
 
     <nav id="leftMenu">
-      <img src="https://via.placeholder.com/250x200" alt="welcomeImg" title="Welcome from Minister Ruairi Quinn">
+      <img src="https://via.placeholder.com/250x150" alt="welcomeImg" title="Welcome from Minister Ruairi Quinn">
       <div  class="mainNav">
         <ul>
           <li> <a href="#">The Department</a> </li>
@@ -52,7 +52,7 @@
           <li> <a href="#">Construction Documents</a> </li>
         </ul>
       </div>
-      <div>
+      <div id="mostPopular">
         <header>
           <h3>Most Popular</h3>
         </header>
@@ -65,31 +65,35 @@
         </ul>
       </div>
     </nav>
+
     <div id="mid">
       <main>
         <article class="whatsNew">
           <header>
             <h2>What's New</h2>
-            <a href="#">More News</a>
+            <button class="more" type="button" name="button">></button>
+            <a class="more" href="#">More News</a>
           </header>
-          <figure>
-            <img src="https://via.placeholder.com/100x100" alt="School inspection">
-          </figure>
-          <h3><a href="#">78 school inspection reports published</a></h3>
-          <h4><i>19 January 2012</i></h4>
-          <p>The reports comprise 29 whole-school evaluations (WSEs) of primary schools, 8 WSEs of post-primary schools, 38 subject inspections and 3 programme evaluations.</p>
+          <div id="notice">
+            <figure>
+              <img src="https://via.placeholder.com/150x150" alt="School inspection">
+            </figure>
+            <h4><a href="#">78 school inspection reports published</a></h4>
+            <h5><i>19 January 2012</i></h5>
+            <p>The reports comprise 29 whole-school evaluations (WSEs) of primary schools, 8 WSEs of post-primary schools, 38 subject inspections and 3 programme evaluations.</p>
+          </div>
           <div class="links">
             <table>
               <tr>
-                <td> <i>13 January 2012</i> </td>
-                <td><a href="#">DEIs Evaluation reports published</a></td>
+                <td class="date"> <i>13 January 2012</i> </td>
+                <td ><a href="#">DEIs Evaluation reports published</a></td>
               </tr>
               <tr>
-                <td> <i>09 January 2012</i> </td>
+                <td  class="date"> <i>09 January 2012</i> </td>
                 <td><a href="#">Minister Cannon launches Butchery Training Programme</a></td>
               </tr>
               <tr>
-                <td> <i>29 December 2011</i> </td>
+                <td  class="date"> <i>29 December 2011</i> </td>
                 <td><a href="#">Minister Quinn welcomes Second Level Student's Union proposals on naming the reformed junior cycle awards</a></td>
               </tr>
             </table>
@@ -97,57 +101,65 @@
         </article>
       </main>
       <section>
-        <article class="newsticker">
-          <header>
-            <h3>Newsticker</h3>
-          </header>
-          <p>Submission entry for the SOLAS Consultation Paper closes at 5pm on Friday, 20th January 2012.</p>
-          <button type="button" name="stop"></button>
-          <button type="button" name="up"></button>
-          <button type="button" name="down"></button>
+        <article id="newsticker">
+          <div id="content">
+            <header>
+              <h3>Newsticker</h3>
+            </header>
+            <p>Submission entry for the SOLAS Consultation Paper closes at 5pm on Friday, 20th January 2012.</p>
+          </div>
+          <div id="buttons">
+            <button id="homeBtn" type="button" name="stop"> <img src="https://png.pngtree.com/svg/20160717/1144d4308b.svg" alt=""> </button>
+            <button type="button" name="up"> <img src="https://image.flaticon.com/icons/svg/61/61032.svg" alt=""> </button>
+            <button type="button" name="down"> <img src="https://img2.gratispng.com/20180329/weq/kisspng-arrow-computer-icons-clip-art-down-arrow-5abd343e351fc6.6056284115223491182176.jpg" alt=""> </button>
+          </div>
         </article>
-        <article class="calendar">
+        <article id="calendar">
           <header>
             <h3>Calendar</h3>
-            <a href="#">Events></a>
+            <a class="more" id="event" href="#">Events ></a>
           </header>
-          <table>
-            <tr>
-              <td><i>25-26 January 2012</i></td>
-              <td><a href="#">TUI Congress, Limerick</a></td>
-            </tr>
-            <tr>
-              <td><i>02-03 February 2012</i></td>
-              <td><a href="#">Migrant Education 8th Annual Confearence, RDS Dublin</a></td>
-            </tr>
-            <tr>
-              <td><i>14-16 March 2012</i></td>
-              <td><a href="#">Patronage Forum, Dublin Castle</a></td>
-            </tr>
-          </table>
+          <div id="calendarContent">
+            <table class="links">
+              <tr>
+                <td class="date"><i>25-26 January 2012</i></td>
+                <td><a href="#">TUI Congress, Limerick</a></td>
+              </tr>
+              <tr>
+                <td class="date"><i>02-03 February 2012</i></td>
+                <td><a href="#">Migrant Education 8th Annual Confearence, RDS Dublin</a></td>
+              </tr>
+              <tr>
+                <td class="date"><i>14-16 March 2012</i></td>
+                <td><a href="#">Patronage Forum, Dublin Castle</a></td>
+              </tr>
+            </table>
+          </div>
         </article>
       </section>
     </div>
-    <aside class="spotlight">
-      <figure>
-        <img src="https://via.placeholder.com/250x200" alt="Main spotlight">
+    <aside id="spotlight">
+      <figure id="mainFig" class="spot">
+        <img src="https://via.placeholder.com/200x300" alt="Main spotlight">
         <figcaption>
           <h2>Main spotlight title</h2>
           <p>The main spotlight show multiple items in rotation</p>
         </figcaption>
       </figure>
-      <figure>
-        <img src="https://via.placeholder.com/75x75" alt="Small spotlight" class="spot">
-        <figcaption>
-          <h2>Title of first small spotlight</h2>
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="#" alt="Minor spotlight" class="spot">
-        <figcaption>
-          <h2>Second minor spotlight title</h2>
-        </figcaption>
-      </figure>
+      <div class="figures">
+        <figure class="fig">
+          <img src="https://via.placeholder.com/100x100" alt="Small spotlight" class="spot">
+          <figcaption>
+            <h2>Title of first small spotlight</h2>
+          </figcaption>
+        </figure>
+        <figure class="fig">
+          <img src="https://via.placeholder.com/100x100" alt="Minor spotlight" class="spot">
+          <figcaption>
+            <h2>Second minor spotlight title</h2>
+          </figcaption>
+        </figure>
+      </div>
     </aside>
     <footer>
       <nav id="bottomMenu" class="secNav">
@@ -158,8 +170,8 @@
           <li> <a href="#">www.Gov.ie</a> </li>
         </ul>
       </nav>
-      <button type="button" name="Page Top">^</button>
-      Department of Education and Skills | An Rain ideachais Agus Scileanna
+      <a href="#inicio"> <img src="https://panasonic.net/lifesolutions/lighting/common/img/pagetop.png" alt=""> </a>
+      <small>Department of Education and Skills | An Rain ideachais Agus Scileanna</small>
     </footer>
   </body>
 </html>
