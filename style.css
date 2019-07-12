@@ -7,7 +7,7 @@ body{
                       "foo foo foo";
   grid-template-columns: 21% 54% 25%;
   max-width: 1200px;
-  min-width: 900px;
+  min-width: 960px;
   margin: 0 auto;
   font-family: 'Sniglet', cursive;
   font-size: 12pt;
@@ -88,6 +88,29 @@ nav#topMenu ul li a{
    margin-right: 5px;
    display: inline;
 }
+nav#topMenu #fontMenos{
+  text-decoration: none;
+  font-size: 10pt;
+  color: black;
+  padding: 2px;
+  margin-left: 2px;
+}
+nav#topMenu #fontMais{
+  text-decoration:none;
+  font-size: 12pt;
+  color: black;
+  padding: 0;
+  font-weight: bold;
+}
+nav#topMenu #contraste{
+  text-decoration:none;
+  font-size: 12pt;
+  color: white;
+  padding: 3px;
+  font-weight: bold;
+  margin-right: 0px;
+  background-color: black;
+}
 form#searchForm{
   grid-area: search;
   display: block;
@@ -154,7 +177,7 @@ nav#leftMenu div#mostPopular ul{
   font-size: 12px;
 }
 nav#leftMenu div#mostPopular li{
-  padding: 2px;
+  padding: 4px;
   text-decoration: none;
 }
 nav#leftMenu div#mostPopular li a{
@@ -167,7 +190,7 @@ nav#leftMenu div#mostPopular li a::before{
 div#mostPopular h3 {
     margin-bottom: 5px;
     margin-left: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /* Div Central */
 div#mid{
@@ -223,12 +246,12 @@ div#mid section article{
   height: 100px;
 }
 article#newsticker div#content{
-  position: relative;
   width: 90%;
   float: left;
 }
 article#newsticker div#buttons{
   float: right;
+  top
 }
 article#newsticker div#buttons button{
   float: right;
@@ -303,7 +326,8 @@ aside figure#mainFig figcaption{
 aside div.figures{
   display: block;
 }
-aside div.figures figure.fig img {
+
+aside div.figures figure.spot img {
   width: 37%;
   height: 35.5%;
   padding: 10px;
@@ -311,7 +335,7 @@ aside div.figures figure.fig img {
   float: left;
   clear: left;
 }
-aside div.figures figure.fig figcaption {
+aside div.figures figure.spot figcaption {
     width: 50%;
     float: right;
     clear: right;
@@ -319,9 +343,7 @@ aside div.figures figure.fig figcaption {
     padding-top: 15%;
     font-size: 10pt;
 }
-aside div.figures figure.fig figcaption h2{
-    text-s
-}
+
 /* Footer */
 footer{
   border-top: 1px solid black;
