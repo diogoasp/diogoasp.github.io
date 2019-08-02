@@ -1,5 +1,3 @@
-var str;
-
 function promptGet(){
   return prompt('Entre com a palavra:');
 }
@@ -12,7 +10,7 @@ function checkPalindrome(str) {
 }
 
 function startPalindrome(){
-  str = promptGet();
+  var str = promptGet();
   if(checkPalindrome(str)){
     alert("A palavra é um palíndromo!");
   }else{
