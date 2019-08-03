@@ -1,0 +1,22 @@
+body{
+  font-size: 14pt;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  background-color: #ede;
+}
+
+main{
+  height: inherit;
+  width: inherit;
+  margin: auto;
+  box-shadow: 5px 5px #ccc;
+  margin-top: 30px;
+  background-color: #ca2;
+}
+
+button{
+  padding: 10px;
+  font-size: 24pt;
+  margin: 10px;
+}
