@@ -20,3 +20,19 @@ function validate(){
     alert('Email válido!');
   } else alert('Email inválido!');
 }
+
+function validate2(){
+  let inputEmail = getPrompt();
+  var pt1 = inputEmail.split("@");
+  if((pt1.length == 2) && (pt1[0].length>0)){
+    var pt2 = pt1[1].split(".");;
+    if (pt2.length > 1){
+      if(pt2[1].length > 2){
+        alert('Email válido');
+        return 0;
+      }
+    }
+  }
+  alert('Email inválido!');
+  return 1;
+}
