@@ -1,10 +1,13 @@
-[
-  {
-    "id":1,
-    "text":"Publicacao 1"
-  },
-  {
-    "id":2,
-    "text":"Publicacao 2"
-  }
-]
+{
+  "publi" : [
+    {
+      "id":1,
+      "text":"Publicacao 1"
+    },
+    {
+      "id":2,
+      "text":"Publicacao 2"
+    }
+  ]
+
+}
