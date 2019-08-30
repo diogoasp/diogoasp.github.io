@@ -229,9 +229,39 @@ div#mid section article{
   display: block;
   clear: left;
 }
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex#f1{
+  width: 95%;
+}
+
+div#mid section  article#newsticker{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: inherit;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+article#newsticker #newsH{
+  box-sizing: border-box;
+  /* flex-grow: 2; */
+  width: 90%;
+  margin: 0px;
+  display: flex;
+}
+
+#publi{
+  /* flex: initial; */
+  height: 75px;
+  display: flex;
+}
+
 article#newsticker button{
-  float: right;
-  clear: right;
   margin: 2px;
 }
 article#newsticker button img{

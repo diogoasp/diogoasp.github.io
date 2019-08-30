@@ -11,8 +11,6 @@ $(document).ready(function (){
         $.ajax({
             url: "https://my-json-server.typicode.com/diogoasp/diogoasp.github.io/publi/"+index,
             success: function(result){
-              console.log("changePubli dentro / index: "+index);
-              console.log("https://my-json-server.typicode.com/diogoasp/diogoasp.github.io/publi/"+index);
               $('#publi').empty();
               $('#publi').append(`<div><p>${result.text}</p></div>`);
             }
