@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P2 - Hipermidias</title>
+    <script defer src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Reserva</h1>
+    </header >
+      <form class="form">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" value="" required>
+        <br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefon" id="telefone">
+        <br>
+        <label for="dataChegada">Data de Chegada:</label>
+        <input type="date" name="dataChegada" id="dataChegada" min="2019-08-30" required>
+        <br>
+        <label for="dataSaida">Data de Saída:</label>
+        <input type="date" name="dataSaida" id="dataSaida" required>
+        <br>
+        <label for="quartos">Quarto:</label><br>
+        <input type="radio" name="quartos" value="1" required> Single<br>
+        <input type="radio" name="quartos" value="2"> Double<br>
+        <input type="radio" name="quartos" value="3"> Triplo
+        <br>
+        <input type="checkbox" name="crianca" id="crianca" value="">
+        <label for="crianca">Criança</label>
+        <div id="divCrianca" hidden>
+          <label for="qtdCrianca">Quantidade:</label>
+          <input type="number" name="qtdCrianca" value="" id="qtdCrianca" size = "8" min="1"></div>
+        <input type="button" name="" value="Calcular" id="btnCalcular">
+
+      </form>
+      <div class="" id="final"></div>
+
+
+  </body>
+</html>
