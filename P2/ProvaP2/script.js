@@ -14,6 +14,7 @@ $(document).ready(function(){
     if(nQuartos == 2) valorTotal = 220.00;
     if(nQuartos == 3) valorTotal = 240.00;
     valorTotal += valorCriancas;
+    valorTotal *= qtdDias;
     $('#final').empty();
     var nome = $('#nome').val();
     $('#final').append('<h3>Resumo: </h3><p>Nome:'+nome+'</p><p>Data Chegada:'+dtChegada+'</p><p>Data Saida: '+dtSaida+'</p><p>Valor:'+valorTotal+'</p>');
