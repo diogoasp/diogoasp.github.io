@@ -8,11 +8,23 @@ $(document).ready(function(){
     var qtdDias = (dtSaida.getTime()-dtChegada.getTime())/DIA;
     var valorCriancas = $('#qtdCrianca').val()*30.0;
     var nQuartos = $("input[name='quartos']:checked").val();
-    var valorTotal;
+    var nQuartos2 = $("input[name='quartos2']:checked").val();
+    var nQuartos3 = $("input[name='quartos3']:checked").val()
+    var valorTotal = 0;
     // Tentei o Switch Case mas não rolou
-    if(nQuartos == 1) valorTotal = 139.00;
-    if(nQuartos == 2) valorTotal = 220.00;
-    if(nQuartos == 3) valorTotal = 240.00;
+
+    if(nQuartos == 1) valorTotal += 139.00;
+    if(nQuartos == 2) valorTotal += 220.00;
+    if(nQuartos == 3) valorTotal += 240.00;
+
+    if(nQuartos2 == 1) valorTotal += 139.00;
+    if(nQuartos2 == 2) valorTotal += 220.00;
+    if(nQuartos2 == 3) valorTotal += 240.00;
+
+    if(nQuartos3 == 1) valorTotal += 139.00;
+    if(nQuartos3 == 2) valorTotal += 220.00;
+    if(nQuartos3 == 3) valorTotal += 240.00;
+
     valorTotal += valorCriancas;
     valorTotal *= qtdDias;
     $('#final').empty();
