@@ -116,11 +116,18 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1400px) {
   .masthead .inner{
-    width: 100%;
+    width: 60%;
   }
-  
+}
+@media (max-width: 1200px) {
+  .masthead .inner{
+    width: 80%;
+  }
+}
+
+@media (max-width: 960px) {
   .inner-img-box{
     width: 50%;
     min-width: 8rem;
@@ -133,6 +140,12 @@ body {
   }
 }
 
+@media (max-width: 766px) {
+  .masthead .inner{
+    width: 100%;
+  }
+
+}
 
 @media (min-width: 48em) {
   .masthead-brand {
