@@ -30,6 +30,11 @@ body {
   background-color: #333;
 }
 
+html{
+  height: 100%;
+  background-color: antiquewhite;
+}
+
 body {
   display: -ms-flexbox;
   display: flex;
@@ -50,16 +55,17 @@ body {
 .fixed{
   position: fixed;
   width: -webkit-fill-available;
-  max-width: 54em;
-  height: 5%;
-  left: inherit;
+  /* max-width: 100%; */
+  height: fit-content;
+  left: 0;
   top: 0;
 }
 
 .aps-image{
   width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  height: auto;
   border-radius:50%;
+  margin: auto;
   /* margin-bottom: 1.2em; */
   /* max-width: 60em;
   max-height: 60em; */
