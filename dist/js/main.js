@@ -1,9 +1,3 @@
-// $('.carousel').carousel()
-//get project data from dist/projects/data.json - projects_dict
-var json = $.getJSON({'url': "https://github.com/diogoasp/diogoasp.github.io/blob/main/dist/projects/data.json", 'async': false});  
-
-//The next line of code will filter out all the unwanted data from the object.
-projects_dict = JSON.parse(json.responseText); 
 
 let links = document.getElementsByClassName("nav-link");
 Array.from(links).forEach((link) =>{
@@ -26,7 +20,7 @@ function hide_mail() {
 }
 
 function updateSize() {
-    //size options
+    //define max options by screen size
     if (window.innerWidth > 769) {
         q = 3;
     } else if(window.innerWidth > 460){
@@ -38,21 +32,64 @@ function updateSize() {
 }
 
 function fill_carousel(q) {
+    let carousel = document.getElementById('carousel-options');
+    carousel.innerHTML = '';
+    document.getElementById('loading-gif').classList.remove('d-none')
     let i = 0;
-    // let q_carousel_item = round(projects_dict length / q)
+    let q_carousel_item = 0
+    if (projects_dict.length > q) {
+        q_carousel_item = Math.ceil(projects_dict.length / q)
+    } else {
+        q_carousel_item = q = projects_dict.length
+    }
     for (let j = 0; j < q_carousel_item; j++) {
-        // create carousel-item
-        // create div class d-flex - div
+        
+        let carousel_item = document.createElement('div');
+        carousel_item.classList.add('carousel-item');
+        if (j == 0) {
+            carousel_item.classList.add('active');
+        }
+        
+        let div = document.createElement('div');
+        div.classList.add('d-flex');
         
         for (let k = 0; k < q; k++) {
-            // create tag a carousel-link 
-            // fill carousel-link with projects_dict[i] data
-            // add to div
+            
+            let carousel_link = document.createElement('a');
+            carousel_link.classList.add('carousel-link', 'mb-4');
+            if (k != q-1) {
+                carousel_link.classList.add('mr-2');
+            }
+            carousel_link.href = projects_dict[i].link;
+            
+            let img = document.createElement('img');
+            img.classList.add('d-block', 'w-100');
+            img.src = projects_dict[i].image +'?auto=yes&bg=777&fg=555&text='+i+' Link';
+            img.alt = "";
+            carousel_link.appendChild(img);
+            
+            let caption = document.createElement('div');
+            caption.classList.add('carousel-caption', 'd-md-block');
+            
+            let name = document.createElement('h5');
+            name.innerHTML = projects_dict[i].name
+            let description = document.createElement('p');
+            description.innerHTML = projects_dict[i].description
+            
+            caption.appendChild(name);
+            caption.appendChild(description);
+            
+            carousel_link.appendChild(caption);
+            
+            div.appendChild(carousel_link);
             i++;
         }
-        // add div to carousel-item 
+        
+        carousel_item.appendChild(div);
+        carousel.appendChild(carousel_item)
     }
+    document.getElementById('loading-gif').classList.add('d-none')
 }
-  
+
 updateSize();
 window.addEventListener("resize", updateSize);

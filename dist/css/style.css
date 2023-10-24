@@ -156,6 +156,9 @@ body {
   bottom: -1%;
 }
 
+#carouselExampleIndicators{
+  margin: 0 auto;
+}
 /*
  * Capa
  */
@@ -191,12 +194,16 @@ body {
     transform: translate(-1.7%, 7%);
   }
   .carousel-link{
-    height: 24rem;
+    min-height: 24rem;
+    /* width: 24rem; */
   }
 }
 @media (max-width: 1200px) {
   .masthead .inner{
     width: 80%;
+  }
+  .carousel-link{
+    min-height: 10rem;
   }
 }
 @media (max-width: 1024px) {
@@ -233,6 +240,12 @@ body {
     height: 20rem;
   }
 }
+@media (max-width: 540px) {
+  .carousel-link{
+    height: 24rem;
+    /* width: 14rem; */
+  }
+}
 @media (max-width: 375px) {
   .masthead .inner{
     width: 100%;
@@ -241,9 +254,7 @@ body {
     min-width: 110%;
     transform: translate(-4.9%, 7%);
   }
-  .carousel-link{
-    height: 10rem;
-  }
+  
 }
 
 @media (min-width: 48em) {
