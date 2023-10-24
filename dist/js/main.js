@@ -1,5 +1,9 @@
 // $('.carousel').carousel()
 //get project data from dist/projects/data.json - projects_dict
+var json = $.getJSON({'url': "https://github.com/diogoasp/diogoasp.github.io/blob/main/dist/projects/data.json", 'async': false});  
+
+//The next line of code will filter out all the unwanted data from the object.
+projects_dict = JSON.parse(json.responseText); 
 
 let links = document.getElementsByClassName("nav-link");
 Array.from(links).forEach((link) =>{
@@ -25,11 +29,15 @@ function updateSize() {
     //size options
     if (window.innerWidth > 769) {
         q = 3;
+    } else if(window.innerWidth > 460){
+        q = 2;
+    } else {
+        q = 1;
     }
     fill_carousel(q);
 }
 
-function fill_carousel(q = 3) {
+function fill_carousel(q) {
     let i = 0;
     // let q_carousel_item = round(projects_dict length / q)
     for (let j = 0; j < q_carousel_item; j++) {
