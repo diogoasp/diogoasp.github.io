@@ -121,6 +121,7 @@ body {
   background-color: whitesmoke;
   border-radius: 15px;
   border: 1px solid rgba(252, 252, 252, 0);
+  height: 24rem;
 }
 
 .carousel-link img{
@@ -189,7 +190,9 @@ body {
   .mastfoot {
     transform: translate(-1.7%, 7%);
   }
-
+  .carousel-link{
+    height: 24rem;
+  }
 }
 @media (max-width: 1200px) {
   .masthead .inner{
@@ -226,6 +229,9 @@ body {
     min-width: 108%;
     transform: translate(-3.7%, 7%);
   }
+  .carousel-link{
+    height: 20rem;
+  }
 }
 @media (max-width: 375px) {
   .masthead .inner{
@@ -234,6 +240,9 @@ body {
   .mastfoot {
     min-width: 110%;
     transform: translate(-4.9%, 7%);
+  }
+  .carousel-link{
+    height: 10rem;
   }
 }
 
