@@ -75,7 +75,7 @@ function fill_carousel(q) {
             if (k != q-1) {
                 carousel_link.classList.add('mr-2');
             }
-            carousel_link.href = projects_dict[i].link;
+            carousel_link.href = "projetos/"+projects_dict[i].link+"/index.html";
             
             let img = document.createElement('img');
             img.classList.add('d-block', 'w-100');
