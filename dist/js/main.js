@@ -66,8 +66,8 @@ function fill_carousel(q) {
                 projects_dict[i] = {
                     "name":"",
                     "description":"",
-                    "image":"",
-                    "link":""
+                    "image":"dist/images/none.png",
+                    "link":"#"
                 }
             }
             let carousel_link = document.createElement('a');
