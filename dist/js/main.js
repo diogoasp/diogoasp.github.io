@@ -30,10 +30,12 @@ function updateSize() {
     }
     fill_carousel(q);
 }
-
+// Refactor when possible
 function fill_carousel(q) {
     let carousel = document.getElementById('carousel-options');
     carousel.innerHTML = '';
+    let indicator_list = document.getElementById("carousel-indicators");
+    indicator_list.innerHTML = '';
     document.getElementById('loading-gif').classList.remove('d-none')
     let i = 0;
     let q_carousel_item = 0
@@ -43,18 +45,31 @@ function fill_carousel(q) {
         q_carousel_item = q = projects_dict.length
     }
     for (let j = 0; j < q_carousel_item; j++) {
+
+        let indicator = document.createElement('li');
+        indicator.setAttribute('data-target',"#carouselExampleIndicators");
+        indicator.setAttribute('ddata-slide-to',j);
         
         let carousel_item = document.createElement('div');
         carousel_item.classList.add('carousel-item');
         if (j == 0) {
             carousel_item.classList.add('active');
+            indicator.classList.add('active')
         }
         
         let div = document.createElement('div');
         div.classList.add('d-flex');
+        indicator_list.appendChild(indicator);
         
         for (let k = 0; k < q; k++) {
-            
+            if (projects_dict[i] == undefined) {
+                projects_dict[i] = {
+                    "name":"",
+                    "description":"",
+                    "image":"",
+                    "link":""
+                }
+            }
             let carousel_link = document.createElement('a');
             carousel_link.classList.add('carousel-link', 'mb-4');
             if (k != q-1) {

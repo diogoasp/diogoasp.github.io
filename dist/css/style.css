@@ -139,10 +139,14 @@ body {
   border-radius: 15px;
   border: 1px solid rgba(252, 252, 252, 0);
   height: 24rem;
+  width: 18rem;
+  min-width: 18rem;
 }
 
 .carousel-link img{
   border-radius: 15px 15px 0px 0px;
+  object-fit: fill;
+  height: 40%;
 }
 
 .carousel-indicators li {
@@ -271,17 +275,16 @@ body {
   .carousel-link{
     height: 20rem;
   }
+  #about{
+    height: max-content;
+    min-height: fit-content;
+  }
 }
 @media (max-width: 540px) {
   .carousel-link{
     height: 24rem;
     /* width: 14rem; */
-  }
-  #about{
-    height: max-content;
-    min-height: fit-content;
-  }
-  
+  } 
 }
 @media (max-width: 375px) {
   .masthead .inner{
