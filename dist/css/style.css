@@ -42,6 +42,10 @@ body {
   color: #fff;
 }
 
+.lead{
+  text-align: justify;
+}
+
 #about{
   height: 100%;
 }
@@ -81,6 +85,7 @@ body {
 
 .inner-img-box{
   width: 25%;
+  padding: 1rem;
 }
 .inner-text-box{
   width: 75%;
