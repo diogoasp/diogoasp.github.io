@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto: Relatório de Custeio</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link href="../../dist/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-dark" style="height: auto">
+    <div class="cover-container d-flex w-100 h-100 mx-auto mt-4 flex-column" id="home">
+      <header class="masthead mb-auto fixed justify-content-center text-center">
+        <div class="inner h-100" style="margin: 0 auto">
+          <h3 class="masthead-brand f-right text-white">Portfólio</h3>
+          <nav class="nav nav-masthead f-left d-flex justify-content-center">
+            <a class="nav-link active" href="https://diogoasp.github.io/#projects"> <i class="bi bi-arrow-left-short"></i> Voltar</a>
+          </nav>
+        </div>
+      </header>
+      <div class="alert alert-warning mt-5" role="alert">
+        <h4 class="alert-heading">Importante!</h4>
+        <p>Vale ressaltar que as imagens podem estar censuradas em casos onde os dados não estão disponíveis publicamente.</p>
+      </div>
+
+      <main role="main" class="inner cover text-dark mt-2">
+        <h1 class="cover-heading">Relatório de Custeio</h1>
+        <figure class="text-center">
+          <img src="images/relatorio_custeio.jpg" alt="" class="w-75" />
+        </figure>
+        <p class="lead mt-2">Relatório de custeio da <a class="btn-link" target="_blank" href="https://transparencia.campos.rj.gov.br">Secretaria Municipal de Transparência e Controle</a> de Campos dos Goytacazes.</p>
+        <p class="lead">Esse relatório teve como objetivo responder questões levantadas pelo diretor de Custos para acompanhamento de despesas fixas.</p>
+      </main>
+      <hr class="bg-black" />
+      <article class="inner cover text-justify">
+        <h2 class="cover-heading">Desenvolvimento</h2>
+        <section class="text-dark mt-1">
+          <p class="lead">Esse relatório teve sua primeira versão no início de 2022, com um conjunto de dados não muito rico, onde mesmo assim foi possível identificar uma série de situações que prejudicavam a eficiência e economicidade do município. Foi através desse relatório que foram descobertas irregularidades sobre a responsabilidade com o custeio de bombas d'água que estavam sendo atribuidas ao município, bem como situações que poderiam evidenciar furto de energia.</p>
+          <p class="lead">A primeira tela tem como objetivo apresentar macro informações dos custos com energia, água e aluguel, tanto em valores absolutos quando em participação percentual. O mapa ao lado permite filtrar os demais visuais de acordo com uma ou mais unidades selecionadas.</p>
+          <figure class="text-center">
+            <img src="images/versao1-1.png" alt="" class="w-75 mx-auto" />
+            <figcaption>Relatório de Custeio - Tela 1</figcaption>
+          </figure>
+        </section>
+        <section class="text-dark mt-1">
+          <p class="lead">A segunda tela busca detalhar o custeio de uma unidade em específico.</p>
+          <p class="lead">É possível identificar todos os endereços, clientes de energia e água que possuiu ao longo do período filtrado, bem como a curva de evolução do consumo e valor dos faturamentos.</p>
+          <p class="lead">Também é possível identificar sua localização, se o imóvel é próprio ou alugado e há um <i>tooltip</i> para mais detalhes com, inclusive, imagem da fachada.</p>
+          <p class="lead">Além disso, há um comparativo do custeio da unidade com outras de mesmo tipo, uma relação de funcionários por cargo e salário médio.</p>
+          <p class="lead">Havia também a opção de baixar a fatura em pdf, mas com algumas mudanças na forma que a Enel envia as faturas o recurso acabou sendo desativado até segunda ordem.</p>
+          <figure class="text-center">
+            <img src="images/versao1-2.png" alt="" class="w-75 mx-auto" />
+            <figcaption>Relatório de Custeio - Tela 2</figcaption>
+          </figure>
+        </section>
+      </article>
+    </div>
+    <footer class="mastfoot mastfoot-alt">
+      <div class="inner mt-5 w-75" style="margin: 0 auto">
+        <p>
+          Desenvolvido por Diogo Alves <a href="https://github.com/diogoasp" target="_blank" rel="noopener noreferrer"> <img class="footer-link-image" src="dist/images/github.jfif" alt="" /> </a>
+        </p>
+        <p>Projeto utilizando <a href="https://getbootstrap.com/">Bootstrap</a>, adaptado do modelo de <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
