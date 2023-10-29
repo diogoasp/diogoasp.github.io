@@ -3,14 +3,18 @@ Array.from(links).forEach((link) => {
   link.addEventListener(
     'click',
     () => {
-      Array.from(links).forEach((l) => {
-        l.classList.remove('active');
-      });
-      link.classList.add('active');
+      set_menu_mark(link);
     },
     false,
   );
 });
+
+function set_menu_mark(link){
+  Array.from(links).forEach((l) => {
+    l.classList.remove('active');
+  });
+  link.classList.add('active');
+}
 
 function show_mail() {
   document.getElementById('send-email-box').classList.remove('d-none');
@@ -112,3 +116,28 @@ function fill_carousel(q) {
 updateSize();
 window.onresize = updateSize;
 // window.addEventListener('resize', updateSize);
+
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+  );
+}
+
+const areas = ["home","about","projects","contact"];
+document.addEventListener('scroll', function () {
+  areas.forEach((area)=>{
+    let box = document.getElementById("h-"+area);
+    if (isInViewport(box)) {
+      let link = document.getElementById("to-"+area);
+      set_menu_mark(link);
+    }
+  });
+
+}, {
+  passive: true
+});
