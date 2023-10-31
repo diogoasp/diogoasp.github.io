@@ -12,6 +12,12 @@ var projects_dict = [
     link: 'portal_pae',
   },
   {
+    name: 'Análise de Desempenho Escolar',
+    description: 'Um projeto BI para análise de desempenho escolar para a Secretaria Municipal de Educação, Ciência e Tecnologia.',
+    image: 'dist/projects/images/analise_desempenho_escolar.png',
+    link: 'analise_desempenho_escolar',
+  },
+  {
     name: 'Relatórios Gerenciais',
     description: 'Um conjunto de relatórios com dados contábeis da Prefeitura Municipal de Campos dos Goytacazes',
     image: 'dist/projects/images/relatorios_gerenciais.png',
