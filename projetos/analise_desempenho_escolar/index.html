@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto: Análise de Desempenho Escolar</title>
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <link href="../../dist/css/style.css" rel="stylesheet" />
-  </head>
-  <body class="bg-white text-dark" style="height: auto">
-    <div class="cover-container d-flex w-100 h-100 mx-auto mt-4 flex-column" id="home">
-      <header class="masthead mb-auto fixed justify-content-center text-center">
-        <div class="inner h-100" style="margin: 0 auto">
-          <h3 class="masthead-brand f-right text-white">Portfólio</h3>
-          <nav class="nav nav-masthead f-left d-flex justify-content-center">
-            <a class="nav-link active" href="https://diogoasp.github.io/#projects"> <i class="bi bi-arrow-left-short"></i> Voltar</a>
-          </nav>
-        </div>
-      </header>
-      <div class="alert alert-warning mt-5" role="alert">
-        <h4 class="alert-heading">Importante!</h4>
-        <p>Vale ressaltar que as imagens podem estar censuradas em casos onde os dados não estão disponíveis publicamente.</p>
-      </div>
 
-      <main role="main" class="inner cover text-dark mt-2">
-        <h1 class="cover-heading">Análise de Desempenho Escolar</h1>
-        <figure class="text-center">
-          <img src="images/capa.jpg" alt="" class="w-75" />
-        </figure>
-        <p class="lead mt-2">Um projeto Desenvolvido a pedido do Secretário de Educação Ciência e Tecnologia de Campos dos Goytacazes para analisar o desempenho escolar com base nos dados do CAED, Censo INEP, iEducar e o Censo Municipal.</p>
-        <p class="lead">Esse projeto é uma solução para rápida análise de um conjunto de dados de diferentes fontes e estruturas. Todos os filtros e informações em tela tem como objetivo responder questões levantadas pelo Secretário e sua equipe.</p>
-        <p class="lead">Sem dúvidas não se destaca pelo visual, mas foi projeto para atender necessidades específicas e com tempo muito curto de desenvolvimento.</p>
-      </main>
-      <hr class="bg-black" />
-      <article class="inner cover text-justify">
-        <h2 class="cover-heading">Desenvolvimento</h2>
-        <section class="text-dark mt-1">
-          <p class="lead mt-2">A primeira tela é simples, somente filtros básicos, onde é possível selecionar uma ou mais escolas para analisar.</p>
-          <figure class="text-center">
-            <img src="images/versao1-1.png" alt="" class="w-75 mx-auto" />
-            <figcaption>Análise de Desempenho Escolar - Tela 1</figcaption>
-          </figure>
-          <p class="lead mt-2">Na segunda tela temos uma visão geral da escola selecionada (caso tenha selecionado uma lista, é alteranar entre as selecionadas com os botões de navegação ao lado do nome da escola).</p>
-          <p class="lead mt-2">Nessa tela a distribuição dos alunos de acordo com o conceito no CAED. Há também a média e o conceito geral da escola. Mais abaixo é possível ver a quantidade de alunos por conceito nas avaliações de Língua Portuguesa e Matemática. Por último, mas não menos importante, temos no canto inferior direito uma matriz com a distribuição por turmas (esse visual é passível de filtrar os demais para visualização por turmas). Nessa mesma matriz há um botão no canto superior direito, onde alterna-se o valor de referência, onde é possível ver a distribuição baseado no CAED, no Censo do INEP ou no Censo Municipal.</p>
-          <figure class="text-center">
-            <img src="images/versao1-2.png" alt="" class="w-75 mx-auto" />
-            <figcaption>Análise de Desempenho Escolar - Tela 2</figcaption>
-          </figure>
-          <p class="lead mt-2">Na última tela temos uma visualização da relação de alunos com indicador visual do lado esquerdo para indicar se o aluno pode estar tendo dificuldades de aprendizagem e uma série de filtros a fim de atender às necessidades do secretário.</p>
-          {% comment %}
-          <p class="lead mt-2">Um ponto que eu gostaria de destacar aqui é a dificuldade em realizar um rank na matriz que não se altere com a fitragem local na matriz. É necessário "sair um pouco da caixa" para chegar em uma solução viável. Algo que poderia, inclusive, ser uma opção nativa nessa poderosa ferramenta.</p>
-          {% endcomment %}
-          <figure class="text-center">
-            <img src="images/versao1-3.png" alt="" class="w-75 mx-auto" />
-            <figcaption>Análise de Desempenho Escolar - Tela 3</figcaption>
-          </figure>
-        </section>
-      </article>
-    </div>
-    <footer class="mastfoot mastfoot-alt">
-      <div class="inner mt-5 w-75" style="margin: 0 auto">
-        <p>
-          Desenvolvido por Diogo Alves <a href="https://github.com/diogoasp" target="_blank" rel="noopener noreferrer"> <img class="footer-link-image" src="../../dist/images/github.jfif" alt="" /> </a>
-        </p>
-        <p>Projeto utilizando <a href="https://getbootstrap.com/">Bootstrap</a>, adaptado do modelo de <a href="https://twitter.com/mdo">@mdo</a>.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto: Análise de Desempenho Escolar</title>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link href="../../dist/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-dark" style="height: auto">
+  <div class="cover-container d-flex w-100 h-100 mx-auto mt-4 flex-column" id="home">
+    <header class="masthead mb-auto fixed justify-content-center text-center">
+      <div class="inner h-100" style="margin: 0 auto">
+        <h3 class="masthead-brand f-right text-white">Portfólio</h3>
+        <nav class="nav nav-masthead f-left d-flex justify-content-center">
+          <a class="nav-link active" href="https://diogoasp.github.io/#projects"> <i class="bi bi-arrow-left-short"></i> Voltar</a>
+        </nav>
       </div>
-    </footer>
-  </body>
+    </header>
+    <div class="alert alert-warning mt-5" role="alert">
+      <h4 class="alert-heading">Importante!</h4>
+      <p>Vale ressaltar que as imagens podem estar censuradas em casos onde os dados não estão disponíveis publicamente.</p>
+    </div>
+
+    <main role="main" class="inner cover text-dark mt-2">
+      <h1 class="cover-heading">Análise de Desempenho Escolar</h1>
+      <figure class="text-center">
+        <img src="images/capa.jpg" alt="" class="w-75" />
+      </figure>
+      <p class="lead mt-2">Um projeto Desenvolvido a pedido do Secretário de Educação Ciência e Tecnologia de Campos dos Goytacazes para analisar o desempenho escolar com base nos dados do CAED, Censo INEP, iEducar e o Censo Municipal.</p>
+      <p class="lead">Esse projeto é uma solução para rápida análise de um conjunto de dados de diferentes fontes e estruturas. Todos os filtros e informações em tela tem como objetivo responder questões levantadas pelo Secretário e sua equipe.</p>
+      <p class="lead">Sem dúvidas não se destaca pelo visual, mas foi projeto para atender necessidades específicas e com tempo muito curto de desenvolvimento.</p>
+    </main>
+    <hr class="bg-black" />
+    <article class="inner cover text-justify">
+      <h2 class="cover-heading">Desenvolvimento</h2>
+      <section class="text-dark mt-1">
+        <p class="lead mt-2">A primeira tela é simples, somente filtros básicos, onde é possível selecionar uma ou mais escolas para analisar.</p>
+        <figure class="text-center">
+          <img src="images/versao1-1.png" alt="" class="w-75 mx-auto" />
+          <figcaption>Análise de Desempenho Escolar - Tela 1</figcaption>
+        </figure>
+        <p class="lead mt-2">Na segunda tela temos uma visão geral da escola selecionada (caso tenha selecionado uma lista, é alteranar entre as selecionadas com os botões de navegação ao lado do nome da escola).</p>
+        <p class="lead mt-2">Nessa tela a distribuição dos alunos de acordo com o conceito no CAED. Há também a média e o conceito geral da escola. Mais abaixo é possível ver a quantidade de alunos por conceito nas avaliações de Língua Portuguesa e Matemática. Por último, mas não menos importante, temos no canto inferior direito uma matriz com a distribuição por turmas (esse visual é passível de filtrar os demais para visualização por turmas). Nessa mesma matriz há um botão no canto superior direito, onde alterna-se o valor de referência, onde é possível ver a distribuição baseado no CAED, no Censo do INEP ou no Censo Municipal.</p>
+        <figure class="text-center">
+          <img src="images/versao1-2.png" alt="" class="w-75 mx-auto" />
+          <figcaption>Análise de Desempenho Escolar - Tela 2</figcaption>
+        </figure>
+        <p class="lead mt-2">Na última tela temos uma visualização da relação de alunos com indicador visual do lado esquerdo para indicar se o aluno pode estar tendo dificuldades de aprendizagem e uma série de filtros a fim de atender às necessidades do secretário.</p>
+        <!-- <p class="lead mt-2">Um ponto que eu gostaria de destacar aqui é a dificuldade em realizar um rank na matriz que não se altere com a fitragem local na matriz. É necessário "sair um pouco da caixa" para chegar em uma solução viável. Algo que poderia, inclusive, ser uma opção nativa nessa poderosa ferramenta.</p> -->
+        <figure class="text-center">
+          <img src="images/versao1-3.png" alt="" class="w-75 mx-auto" />
+          <figcaption>Análise de Desempenho Escolar - Tela 3</figcaption>
+        </figure>
+      </section>
+    </article>
+  </div>
+  <footer class="mastfoot mastfoot-alt">
+    <div class="inner mt-5 w-75" style="margin: 0 auto">
+      <p>
+        Desenvolvido por Diogo Alves <a href="https://github.com/diogoasp" target="_blank" rel="noopener noreferrer"> <img class="footer-link-image" src="../../dist/images/github.jfif" alt="" /> </a>
+      </p>
+      <p>Projeto utilizando <a href="https://getbootstrap.com/">Bootstrap</a>, adaptado do modelo de <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
